@@ -1,0 +1,20 @@
+<nav class="green">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">Food shop</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        
+        {{#if isIndex}}
+        <li class="active"><a href="/">Exit</a></li>
+        {{ else }}
+        <li><a href="/">Exit</a></li>
+        {{/if}}
+
+        {{#if isCreate}}
+        <li class="active"><a href="/create">Home</a></li>
+        {{ else }}
+        <li><a href="/create">Home</a></li>
+        {{/if}}
+
+      </ul>
+    </div>
+  </nav>
